@@ -8,7 +8,7 @@
 # // ASSIGN SYS004,TAPE para associar um job a um dispositivo.
 # No shell moderno, qual mecanismo cumpre papel equivalente?
 
-Resposta:
+Resposta: O equivalente moderno ao // ASSIGN do JCL é o Redirecionamento de Entrada/Saída do shell.
 
 # ─────────────────────────────────────────────────────
 
@@ -19,7 +19,8 @@ Resposta:
 #    papel? Como o make sabe que não precisa recompilar um arquivo
 #    que não mudou?
 
-Resposta 1:
+Resposta 1: No make, esses papéis são divididos entre duas partes:
+a construção de um grafo de dependências e a comparação de timestamps.
 
 
 # 2. O monitor unificava "supervisor, carregador e rotinas de I/O
@@ -27,3 +28,4 @@ Resposta 1:
 #    de desenvolvimento moderno?
 
 Resposta 2:
+O Makefile junta todo o processo de build e automação de um projeto de software.
